@@ -17,7 +17,7 @@ function onFrame() {
   niceClockCen.textContent = now.setZone('America/Chicago').toLocaleString(DateTime.TIME_24_WITH_LONG_OFFSET);
   jsClock.textContent = now.toMillis();
   ntpClock.textContent =
-    epochDiffSeconds * 1_000_000 + now.toMillis() * 1_000_000;
+    epochDiffSeconds * 1000000 + now.toMillis() * 1000000;
 }
 
 // Define variables
