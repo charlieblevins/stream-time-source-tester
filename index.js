@@ -6,7 +6,8 @@ const niceClockCen = document.querySelector("#nice-clock-cen");
 const jsClock = document.querySelector("#js-clock");
 const ntpClock = document.querySelector("#ntp-clock");
 
-const epochDiffSeconds = 2_208_988_800;
+// 2,208,988,800
+const epochDiffSeconds = 2208988800;
 
 function onFrame() {
   let now = DateTime.now();
